@@ -1,0 +1,473 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #f2f2f2;
+    width: 1440px;
+    height: 110px;
+    position: fixed;
+}
+.problema1 {
+    position: absolute;
+    top: 54px;
+    left: 526px;
+    font-weight: 590.5 ;
+}
+.home1 {
+    position: absolute;
+    top: 54px;
+    left: 402px;
+    font-weight: 590.9;
+}
+.projeto1 {
+    position: absolute;
+    top: 54px;
+    left: 714px;
+    font-weight: 590.5;
+}
+.inspiraes1 {
+    position: absolute;
+    top: 54px;
+    left: 972px;
+    font-weight: 590.5;
+}
+.time1 {
+    position: absolute;
+    top: 54px;
+    left: 872px;
+    font-weight: 590.9;
+}
+.group-child21 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #c8a2c8;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    width: 95px;
+    height: 93px;
+}
+.graduation-cap-2-1 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    width: 53px;
+    height: 53px;
+
+}
+.ellipse-group {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    width: 20%;
+  height: 93px;
+
+}
+
+
+.prepmaster1 {
+    top: 24px;
+    left: 180px;
+    font-weight: bolder;
+
+}
+.estude-e-domine1 {
+    position: absolute;
+    top: 58px;
+    left: 102px;
+    font-size: 16px;
+}
+.group-container {
+  display: flex;
+text-align: left;
+  gap: 30px;
+}
+
+.group-container .prepmaster1 {
+  margin-left: 130px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: -15px;
+
+}
+
+.mail-packet-email-envelope-let-icon {
+  position: absolute;
+  top: 35px;
+  left: 1200px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mail-packet-email-envelope-let-icon:hover {
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+
+
+.main-nav {
+  display: flex;
+  gap: 30px; /* Adiciona espaçamento entre os links */
+}
+
+.main-nav a:hover {
+  color: #9c585d;; 
+
+  transition: 0.5s;
+
+  transition: 500ms linear;
+} 
+
+
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-weight: 600;
+  transition: transform 0.02s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #9c585d;; 
+
+  transition: 0.5s;
+
+  transition: 200ms linear;
+
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Ajuste para que os elementos fiquem nas extremidades */
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px; /* Espaçamento entre os links */
+  font-weight: bolder;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+}
+
+.prepmaster1 {
+  font-weight: bolder;
+  font-size: 24px; /* Tamanho ajustado */
+  left: 180px;
+  font-family: "Kumbh Sans";
+}
+
+.estude-e-domine1 {
+  position: absolute;
+  top: 65px;
+  left: 180px;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section {
+    font-family: "Kumbh Sans"; 
+
+} 
+
+
+.vector-parent {
+    width: 100%;
+    position: relative;
+    height: 797.5px;
+}
+
+
+.calendario {
+    min-height: 1024px;
+    padding-top: 278px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: "Kumbh Sans";
+    position: relative;
+
+}
+
+
+.texto-home {
+    margin-top: 30px;
+    width:30%;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.calendario h3 {
+    font-size: 36px;
+    margin-top: 60px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.calendario h3 span {
+    font-weight: 300;
+    
+}
+
+.lampada{
+min-height: 1024px;
+}
+
+.lamapda-foto{
+    margin-top: 550px ;
+    height: 389.54px;
+    margin-left: 460px;
+}
+
+.titulo-lampada{
+ margin-top: -830px;
+ text-align: center;
+ font-size: 36px;
+ font-weight: 600;
+}
+
+.texto-lampada {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+.linha-1 {
+    width: 100%;
+    display: flex;
+    margin-top: 128px;
+}
+
+.linha-2 {
+    width: 100%;
+    display: flex;
+    margin: 128px 0 0;
+}
+
+.linha-3 {
+    width: 100%;
+    display: flex;
+    margin: 128px 0 0;
+}
+
+.linha-1 > div,
+.linha-2 > div,
+.linha-3 > div {
+    width: 50%;
+}
+
+.linha-1 > div p,
+.linha-2 > div p,
+.linha-3 > div p {
+    padding: 16px 32px;
+    border-radius: 32px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.linha-1 > div:first-child p {
+    background-color: #D0EFFF;
+    margin-left: 70px;
+    margin-top: -10px;
+    width: 550px;
+    height: 93px;
+}
+.linha-1 > div:last-child p {
+    background-color: #C8A2C8;
+    margin-left: 30px;
+    width: 550px;
+    height: 93px;
+    margin-top: -10px;
+}
+
+.linha-2 > div:first-child p { 
+    background-color: #FF9AA2;
+    margin: 0 200px 0 32px;
+    width: 400px;
+    height: 93px;
+    margin-top: -10px;
+}
+.linha-2 > div:last-child p {
+    background-color: #B8E986;
+    width: 400px;
+    height: 93px;
+    margin-top: -10px;
+    margin-left: 210px;
+}
+
+.linha-3 > div:first-child p {
+    background-color: #C8A2C8;
+    margin: 0 180px 0 64px;
+    height: 93px;
+    margin-top: 0px;
+}
+.linha-3 > div:last-child p {
+    background-color: #D0EFFF;
+    margin: 0 64px 0 180px;
+    height: 93px;
+    margin-top: 0px;
+}
+
+
+.beneficiosprep {
+    background-image: url(img/beneficios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1300px;
+    height: 1024px;
+}
+
+.beneficiosprep .container > div:last-child{
+    text-align: right;
+    margin-left: -50px;
+    display: block;
+}
+
+
+.bola1 {
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.bola2 {
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.bola3 {
+    margin-left: -30px;
+    margin-top: -60px;
+}
+
+.bola4 {
+    margin-left: -60px;
+}
+
+
+.beneficiosprep .bloco {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.texto-redu {
+    margin-left: -40px;
+}
+
+.texto-moni {
+    margin-left: -80px;
+}
+
+.beneficiosprep .container > div .bloco:first-child{
+    margin-right: 225px;
+    padding-top: 100px;
+
+}
+
+.beneficiosprep h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 120px;
+    margin-left: 20px;
+}
+
+.beneficiosprep strong {
+    color: #4198C5;
+}
+
+footer {
+    background-color: #F2F2F2;
+    font-family: "Kumbh Sans";
+    padding: 100px 0;
+    background-color: #AEE0E8;
+    background-image: url(img/bolaEestrela.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.botao {
+    padding: 40px 70px;
+    border-radius: 32px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    margin-left: 480px;
+    color: #000;
+}
+.botao:hover {
+    color: #9c585d;; 
+  
+    transition: 0.5s;
+
+    transition: 100ms linear;
+}
+
+.pgina-3-item {
+    position: absolute;
+    background-image: url('Group 39.png');
+    margin-top: -180px;
+    width: 100%;
+}
+
