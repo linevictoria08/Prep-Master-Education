@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendário Inteligente de Estudos</title>
+<style>
+       :root {
+           --primary-color: #4a90e2;
+           --secondary-color: #f5f5f5;
+           --text-color: #333;
+           --success-color: #4caf50;
+           --warning-color: #ff9800;
+       }
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       body {
+           background-color: var(--secondary-color);
+           color: var(--text-color);
+           line-height: 1.6;
+       }
+       .container {
+           max-width: 1200px;
+           margin: 0 auto;
+           padding: 20px;
+       }
+       .header {
+           text-align: center;
+           padding: 40px 0;
+           background-color: var(--primary-color);
+           color: white;
+           margin-bottom: 30px;
+       }
+       .setup-form {
+           background: white;
+           padding: 30px;
+           border-radius: 10px;
+           box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+           margin-bottom: 30px;
+       }
+       .form-group {
+           margin-bottom: 20px;
+       }
+       label {
+           display: block;
+           margin-bottom: 8px;
+           font-weight: bold;
+       }
+       select, input {
+           width: 100%;
+           padding: 10px;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           font-size: 16px;
+       }
+       button {
+           background-color: var(--primary-color);
+           color: white;
+           padding: 12px 24px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 16px;
+           transition: background-color 0.3s;
+       }
+       button:hover {
+           background-color: #357abd;
+       }
+       .calendar {
+           background: white;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+           display: none;
+       }
+       .week-grid {
+           display: grid;
+           grid-template-columns: repeat(7, 1fr);
+           gap: 10px;
+           margin-top: 20px;
+       }
+       .day {
+           border: 1px solid #ddd;
+           padding: 10px;
+           border-radius: 5px;
+       }
+       .day-header {
+           font-weight: bold;
+           text-align: center;
+           margin-bottom: 10px;
+           color: var(--primary-color);
+       }
+       .subject {
+           background-color: #e3f2fd;
+           padding: 5px;
+           margin: 5px 0;
+           border-radius: 3px;
+           font-size: 14px;
+       }
+       .progress-section {
+           margin-top: 30px;
+           padding: 20px;
+           background: white;
+           border-radius: 10px;
+           box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+           display: none;
+       }
+       .progress-bar {
+           width: 100%;
+           height: 20px;
+           background-color: #f0f0f0;
+           border-radius: 10px;
+           margin: 10px 0;
+           overflow: hidden;
+       }
+       .progress {
+           height: 100%;
+           background-color: var(--success-color);
+           transition: width 0.3s ease;
+       }
+       .alert {
+           padding: 15px;
+           margin: 15px 0;
+           border-radius: 5px;
+           display: none;
+       }
+       .alert-warning {
+           background-color: #fff3e0;
+           border: 1px solid var(--warning-color);
+           color: #f57c00;
+       }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Calendário Inteligente de Estudos</h1>
+<p>Organize seus estudos de forma eficiente e personalizada</p>
+</div>
+<div class="container">
+<div class="setup-form" id="setupForm">
+<div class="form-group">
+<label for="exam">Selecione o vestibular:</label>
+<select id="exam" required>
+<option value="">Escolha uma opção</option>
+<option value="enem">ENEM</option>
+<option value="fuvest">FUVEST</option>
+<option value="unicamp">UNICAMP</option>
+</select>
+</div>
+<div class="form-group">
+<label for="hoursPerDay">Horas de estudo por dia:</label>
+<input type="number" id="hoursPerDay" min="1" max="12" required>
+</div>
+<button onclick="generateSchedule()">Gerar Calendário</button>
+</div>
+<div class="alert alert-warning" id="warningAlert">
+           Atenção: Sua carga horária está alta! Considere incluir mais períodos de descanso.
+</div>
+<div class="calendar" id="calendar">
+<h2>Seu Calendário Semanal</h2>
+<div class="week-grid" id="weekGrid"></div>
+</div>
+<div class="progress-section" id="progressSection">
+<h2>Progresso por Matéria</h2>
+<div id="progressBars"></div>
+</div>
+</div>
+<script>
+       const examSubjects = {
+           enem: ['Matemática', 'Português', 'Redação', 'Ciências da Natureza', 'Ciências Humanas'],
+           fuvest: ['Matemática', 'Português', 'História', 'Geografia', 'Biologia'],
+           unicamp: ['Matemática', 'Português', 'Física', 'Química', 'Biologia']
+       };
+       const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+       function generateSchedule() {
+           const exam = document.getElementById('exam').value;
+           const hoursPerDay = parseInt(document.getElementById('hoursPerDay').value);
+           if (!exam || !hoursPerDay) {
+               alert('Por favor, preencha todos os campos.');
+               return;
+           }
+           if (hoursPerDay > 8) {
+               document.getElementById('warningAlert').style.display = 'block';
+           } else {
+               document.getElementById('warningAlert').style.display = 'none';
+           }
+           const subjects = examSubjects[exam];
+           const schedule = createSchedule(subjects, hoursPerDay);
+           displaySchedule(schedule);
+           displayProgress(subjects);
+           document.getElementById('calendar').style.display = 'block';
+           document.getElementById('progressSection').style.display = 'block';
+       }
+       function createSchedule(subjects, hoursPerDay) {
+           const schedule = {};
+           weekDays.forEach(day => {
+               schedule[day] = [];
+               if (day !== 'Domingo') {
+                   const shuffledSubjects = [...subjects].sort(() => Math.random() - 0.5);
+                   let remainingHours = hoursPerDay;
+                   while (remainingHours > 0 && shuffledSubjects.length > 0) {
+                       const subject = shuffledSubjects.pop();
+                       const hours = Math.min(2, remainingHours);
+                       schedule[day].push({
+                           subject: subject,
+                           hours: hours
+                       });
+                       remainingHours -= hours;
+                   }
+               }
+           });
+           return schedule;
+       }
+       function displaySchedule(schedule) {
+           const weekGrid = document.getElementById('weekGrid');
+           weekGrid.innerHTML = '';
+           weekDays.forEach(day => {
+               const dayElement = document.createElement('div');
+               dayElement.className = 'day';
+               const dayHeader = document.createElement('div');
+               dayHeader.className = 'day-header';
+               dayHeader.textContent = day;
+               dayElement.appendChild(dayHeader);
+               if (schedule[day].length > 0) {
+                   schedule[day].forEach(item => {
+                       const subject = document.createElement('div');
+                       subject.className = 'subject';
+                       subject.textContent = `${item.subject} (${item.hours}h)`;
+                       dayElement.appendChild(subject);
+                   });
+               } else {
+                   const rest = document.createElement('div');
+                   rest.className = 'subject';
+                   rest.style.backgroundColor = '#e8f5e9';
+                   rest.textContent = 'Descanso';
+                   dayElement.appendChild(rest);
+               }
+               weekGrid.appendChild(dayElement);
+           });
+       }
+       function displayProgress(subjects) {
+           const progressBars = document.getElementById('progressBars');
+           progressBars.innerHTML = '';
+           subjects.forEach(subject => {
+               const progress = Math.floor(Math.random() * 100);
+               const subjectProgress = document.createElement('div');
+               subjectProgress.innerHTML = `
+<h3>${subject}</h3>
+<div class="progress-bar">
+<div class="progress" style="width: ${progress}%"></div>
+</div>
+<p>${progress}% concluído</p>
+               `;
+               progressBars.appendChild(subjectProgress);
+           });
+       }
+</script>
+</body>
+</html>

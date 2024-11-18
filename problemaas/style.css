@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #f2f2f2;
+    width: 1440px;
+    height: 110px;
+    position: fixed;
+}
+.problema1 {
+    position: absolute;
+    top: 54px;
+    left: 526px;
+    font-weight: 590.5 ;
+}
+.home1 {
+    position: absolute;
+    top: 54px;
+    left: 402px;
+    font-weight: 590.9;
+}
+.projeto1 {
+    position: absolute;
+    top: 54px;
+    left: 714px;
+    font-weight: 590.5;
+}
+.inspiraes1 {
+    position: absolute;
+    top: 54px;
+    left: 972px;
+    font-weight: 590.5;
+}
+.time1 {
+    position: absolute;
+    top: 54px;
+    left: 872px;
+    font-weight: 590.9;
+}
+.group-child21 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #c8a2c8;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    width: 95px;
+    height: 93px;
+}
+.graduation-cap-2-1 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    width: 53px;
+    height: 53px;
+
+}
+.ellipse-group {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    width: 20%;
+  height: 93px;
+
+}
+
+
+.prepmaster1 {
+    top: 24px;
+    left: 180px;
+    font-weight: bolder;
+
+}
+.estude-e-domine1 {
+    position: absolute;
+    top: 58px;
+    left: 102px;
+    font-size: 16px;
+}
+.group-container {
+  display: flex;
+text-align: left;
+  gap: 30px;
+}
+
+.group-container .prepmaster1 {
+  margin-left: 130px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: -15px;
+
+}
+
+.mail-packet-email-envelope-let-icon {
+  position: absolute;
+  top: 35px;
+  left: 1200px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mail-packet-email-envelope-let-icon:hover {
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+
+.desktop-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 6144px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: 'Kumbh Sans';
+}
+.main-nav {
+  display: flex;
+  gap: 30px; /* Adiciona espaçamento entre os links */
+  transition: transform 0.02s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #9c585d;; 
+
+  transition: 0.5s;
+
+  transition: 200ms linear;
+
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-weight: 600;
+}
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Ajuste para que os elementos fiquem nas extremidades */
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px; /* Espaçamento entre os links */
+  font-weight: bolder;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+}
+
+.prepmaster1 {
+  font-weight: bolder;
+  font-size: 24px; /* Tamanho ajustado */
+  left: 180px;
+  font-family: "Kumbh Sans";
+}
+
+.estude-e-domine1 {
+  position: absolute;
+  top: 65px;
+  left: 180px;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+
+section {
+    font-family: "Kumbh Sans"; 
+
+} 
+
+.sobrecarga {
+    min-height: 1024px;
+    background-image: url(img/sobrecarga.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 156px;
+    padding-top: 50px;
+}
+
+.bloco-rosa {
+    padding: 64px;
+    background-color: #FFCFD0;
+    border-radius: 16px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 40px;
+}
+
+.bloco-rosa h3{
+    text-align: center;
+    color: #9C585D;
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.bloco-rosa .texto {
+    display: flex;
+}
+
+.bloco-rosa .texto > div {
+    width: 50%;
+    
+}
+
+.bloco-rosa .texto > div:first-child {
+    padding-right: 16px;
+}
+
+.bloco-rosa .texto > div:last-child {
+    padding-left: 16px;
+}
+
+.bloco-rosa .rotina {
+    margin-bottom: 52px;
+}
+
+
+.bloco-rosa li {
+    margin-bottom: 30px;
+    list-style: disc;
+}
+
+
+.texto2 p {
+    margin-bottom: 77px;
+}
+
+
+.autocuidados {
+    min-height: 1024px;
+    background-image: url(img/autocuidados.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 156px;
+    padding-top: 90px;
+}
+
+.bloco-verde {
+    padding: 64px;
+    background-color: #B8E986;
+    border-radius: 16px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 40px;
+}
+
+.bloco-verde h3{
+    text-align: center;
+    color: #536640;
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.bloco-verde .texto {
+    display: flex;
+}
+
+.bloco-verde .texto > div {
+    width: 50%;
+    
+}
+
+.bloco-verde .texto > div:first-child {
+    padding-right: 16px;
+}
+
+.bloco-verde .texto > div:last-child {
+    padding-left: 16px;
+}
+
+.bloco-verde .estudantes {
+    margin-bottom: 52px;
+}
+
+
+.bloco-verde li {
+    margin-bottom: 30px;
+    list-style: disc;
+}
+
+
+.texto2 p {
+    margin-bottom: 77px;
+}
+
+.ansiedade {
+    min-height: 1024px;
+    background-image: url(img/desempenho.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 156px;
+    padding-top: 90px;
+}
+
+.bloco-azul {
+    padding: 64px;
+    background-color: #D0EFFF;
+    border-radius: 16px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 40px;
+    
+}
+
+.bloco-azul h3{
+    text-align: center;
+    color: #4198C5;
+    margin-bottom: 64px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.bloco-azul .texto {
+    display: flex;
+}
+
+.bloco-azul .texto > div {
+    width: 50%;
+    
+}
+
+.bloco-azul .texto > div:first-child {
+    padding-right: 16px;
+}
+
+.bloco-azul .texto > div:last-child {
+    padding-left: 16px;
+}
+
+.bloco-azul .avaliação {
+    margin-bottom: 52px;
+}
+
+
+.bloco-azul li {
+    margin-bottom: 30px;
+    list-style: disc;
+}
+
+
+.texto2 p {
+    margin-bottom: 77px;
+}
+
+
+
+

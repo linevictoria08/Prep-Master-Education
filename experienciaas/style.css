@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #f2f2f2;
+    width: 1440px;
+    height: 110px;
+    position: fixed;
+}
+.problema1 {
+    position: absolute;
+    top: 54px;
+    left: 526px;
+    font-weight: 590.5 ;
+}
+.home1 {
+    position: absolute;
+    top: 54px;
+    left: 402px;
+    font-weight: 590.9;
+}
+.projeto1 {
+    position: absolute;
+    top: 54px;
+    left: 714px;
+    font-weight: 590.5;
+}
+.inspiraes1 {
+    position: absolute;
+    top: 54px;
+    left: 972px;
+    font-weight: 590.5;
+}
+.time1 {
+    position: absolute;
+    top: 54px;
+    left: 872px;
+    font-weight: 590.9;
+}
+.group-child21 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #c8a2c8;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    width: 95px;
+    height: 93px;
+}
+.graduation-cap-2-1 {
+    position: absolute;
+    top: 20px;
+    left: 21px;
+    width: 53px;
+    height: 53px;
+
+}
+.ellipse-group {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    width: 20%;
+  height: 93px;
+
+}
+
+
+.prepmaster1 {
+    top: 24px;
+    left: 180px;
+    font-weight: bolder;
+
+}
+.estude-e-domine1 {
+    position: absolute;
+    top: 58px;
+    left: 102px;
+    font-size: 16px;
+}
+.group-container {
+  display: flex;
+text-align: left;
+  gap: 30px;
+}
+
+.group-container .prepmaster1 {
+  margin-left: 130px;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: -15px;
+
+}
+
+.mail-packet-email-envelope-let-icon {
+  position: absolute;
+  top: 35px;
+  left: 1200px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mail-packet-email-envelope-let-icon:hover {
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+
+
+.main-nav {
+  display: flex;
+  gap: 30px; /* Adiciona espaçamento entre os links */
+}
+
+.main-nav a:hover {
+  color: #9c585d;; 
+
+  transition: 0.5s;
+
+  transition: 500ms linear;
+} 
+
+
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+  font-weight: 600;
+  transition: transform 0.02s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #9c585d;; 
+
+  transition: 0.5s;
+
+  transition: 200ms linear;
+
+  transform: scale(1.1); /* Zoom de 10% */
+} 
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Ajuste para que os elementos fiquem nas extremidades */
+  align-items: center;
+  background-color: #f0f0f0; /* Ajuste para o tom de cinza */
+  padding: 10px 50px;
+  width: 100%;
+  gap: 20px;
+  position: fixed;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px; /* Espaçamento entre os links */
+  font-weight: bolder;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'League Spartan'; /* Fonte original */
+  font-size: 24px; /* Ajuste o tamanho da fonte */
+}
+
+.prepmaster1 {
+  font-weight: bolder;
+  font-size: 24px; /* Tamanho ajustado */
+  left: 180px;
+  font-family: "Kumbh Sans";
+}
+
+.estude-e-domine1 {
+  position: absolute;
+  top: 65px;
+  left: 180px;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
+}
+
+
+
+
+.desktop18 {
+    width: 100%;
+        position: relative;
+        background-color: #fff;
+        height: 1024px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 32px;
+        color: #000;
+        font-family: 'Kumbh Sans';
+}
+
+
+
+.nossa-experiencia {
+    position: absolute;
+    top: 110px;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    max-width: 100%;
+    margin-top: 0px;
+    height: 461;
+    width: 1440px;
+}
+
+.Ellipse3-first {
+margin-top: 600px;
+}
+
+.os-desafios {
+        position: absolute;
+        left: 149px;
+        top: 648px;
+        color: black;
+        font-size: 64px;
+        font-weight: 700;
+        word-wrap: break-word;
+        margin-top: 15px;
+}
+
+.descricao {
+    width: 1150px;
+    position: absolute;
+    left: 149px;
+    top: 739px;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.desktop17 {
+    width: 100%;
+        position: relative;
+        background-color: #fff;
+        max-height: 1024px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 32px;
+        color: #000;
+        font-family: 'Kumbh Sans';
+}
+
+.Ellipse3-second {
+    margin-left: 977px;
+    margin-top: 20px;
+    }
+
+.Ellipse3-third {
+    padding-top: 10px;
+}
+
+.header-textsolu{
+    position: absolute;
+    left: 630px;
+    top: 600px;
+    color: black;
+    font-size: 64px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 480px;
+    font-family: 'Kumbh Sans';
+}
+
+.content-textsolu{
+    width: 1000px;
+    position: absolute;
+    left: 80px;
+    top: 1190px;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: right;
+    font-family: 'Kumbh Sans';
+}
+
+.header-textproce {
+    position: absolute;
+    left: 149px;
+    top: 1470px;
+    color: black;
+    font-size: 64px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 15px;
+    font-family: 'Kumbh Sans';
+}
+
+.content-textproce{
+    width: 1150px;
+    position: absolute;
+    left: 149px;
+    top: 1600px;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: left;
+    font-family: 'Kumbh Sans';
+}
+
+.texto-video {
+    position: absolute;
+    top: 270px;
+    color: black;
+    opacity: 60%;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 10px;
+    font-family: 'Kumbh Sans';
+    margin-left: 310px;
+}
